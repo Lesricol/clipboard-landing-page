@@ -1,3 +1,12 @@
+:root {
+  --font-size-title: 32px;
+  --font-weight-title: 600;
+  --primary-color-title: #4c545c;
+  --font-size-text: 16px;
+  --line-height-text: 26px;
+  --primary-color-text: #9eabb2;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -18,5 +27,262 @@ ul {
 }
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Bai Jamjuree", sans-serif;
+  background-image: url(../assets/images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  text-align: center;
+  color: var(--primary-color-text);
+}
+
+@media screen and (width>=1440px) {
+  body {
+    background-image: url(../assets/images/bg-header-desktop.png);
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 32px;
+}
+
+@media screen and (width>=1440px) {
+  .header {
+    margin: 0;
+  }
+}
+
+.clipboard__principal {
+  width: 125px;
+  margin: 123px 0 64px;
+}
+
+.clipboard__title {
+  margin: 0;
+  font-weight: var(--font-weight-title);
+  font-size: var(--font-size-title);
+  color: var(--primary-color-title);
+  margin-bottom: 1rem;
+}
+
+.clipboard__subtitle {
+  margin: 0;
+  font-weight: var(--font-weight-title);
+  font-size: 1.75rem;
+  color: var(--primary-color-title);
+  margin-bottom: 1rem;
+}
+
+.clipboard__text {
+  margin: 0;
+  font-weight: var(--font-size-text);
+  line-height: var(--line-height-text);
+  margin-bottom: 48px;
+}
+
+@media screen and (width>=1440px) {
+  .clipboard__info {
+    width: 730px;
+  }
+  .clipboard__title {
+    font-size: 46px;
+  }
+  .clipboard__subtitle {
+    font-size: 36px;
+  }
+  .clipboard__text {
+    font-size: 18px;
+    letter-spacing: 0.14px;
+  }
+}
+
+.button {
+  width: 311px;
+  padding: 14px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: white;
+  border-radius: 28px;
+}
+
+.button--green {
+  background-color: #26bba4;
+  box-shadow: 0 10px 20px #89e5c66b;
+  margin-bottom: 24px;
+}
+
+.button--blue {
+  background-color: #6174ff;
+  box-shadow: 0 10px 20px #6173ff3b;
+  margin-bottom: 160px;
+}
+
+.button__header {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (width>=1440px) {
+  .button__header {
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 150px;
+  }
+  .button--green {
+    margin-bottom: 0;
+  }
+  .button--blue {
+    margin-bottom: 0;
+  }
+}
+.main {
+  margin: 0 32px;
+}
+
+@media screen and (width>=1440px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+.clipboard__image {
+  margin-bottom: 56px;
+}
+
+.clipboard__text--margin {
+  margin-bottom: 186px;
+}
+
+.clipboard__image--margin {
+  margin-bottom: 130px;
+}
+
+@media screen and (width>=1440px) {
+  .clipboard__quick {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    left: -120px;
+    width: 1212px;
+    margin-bottom: 150px;
+  }
+  .clipboard__info3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 406px;
+  }
+  .clipboard__info4 {
+    width: 350px;
+    text-align: left;
+  }
+  .clipboard__text--margin {
+    margin-bottom: 0;
+  }
+
+  .clipboard__subtitle2 {
+    font-size: 24px;
+  }
+  .clipboard__text--margin {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.12px;
+    margin-bottom: 0;
+  }
+  .clipboard__image {
+    margin-bottom: 0;
+  }
+}
+
+.clipboard__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (width>=1440px) {
+  .clipboard__items {
+    width: 350px;
+  }
+  .clipboard__items-row {
+    display: flex;
+    justify-content: space-between;
+    width: 1110px;
+    margin-bottom: 150px;
+  }
+}
+
+.clipboard__icon {
+  margin-bottom: 40px;
+}
+
+.clipboard__logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.25rem;
+  margin-bottom: 170px;
+}
+@media screen and (width>=1440px) {
+  .clipboard__logos {
+    flex-direction: row;
+  }
+}
+.button__main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 170px;
+}
+@media screen and (width>=1440px) {
+  .button__main {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #9eabb23d;
+  color: #4c545c;
+}
+.clipboard__principal--footer {
+  width: 55px;
+  margin: 52px 0 40px 0;
+}
+
+.clipboard__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 50px;
+}
+
+.clipboard__footer-logos {
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 51px;
+}
+
+@media screen and (width>=1440px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 165px;
+  }
+  .clipboard__footer {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+  .clipboard__footer-logos {
+    margin-bottom: 0;
+  }
 }

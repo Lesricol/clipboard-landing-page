@@ -3,10 +3,213 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/png"
+    />
     <title>Document</title>
   </head>
   <body>
-    <hi>Proyecto Base</hi>
+    <header class="header">
+      <img
+        class="clipboard__principal"
+        src="./assets/images/logo.svg"
+        alt="logo"
+      />
+      <div class="clipboard__info">
+        <h1 class="clipboard__title">A history of everything you copy</h1>
+        <p class="clipboard__text">
+          Clipboard allows you to track and organize everything you copy.
+          Instantly access your clipboard on all your devices.
+        </p>
+      </div>
+      <div class="button__header">
+        <a class="button button--green" href="#">Download for iOS</a>
+        <a class="button button--blue" href="#">Download for Mac</a>
+      </div>
+    </header>
+    <main class="main">
+      <div class="clipboard__info">
+        <h2 class="clipboard__subtitle">Keep track of your snippets</h2>
+        <p class="clipboard__text">
+          Clipboard instantly stores any item you copy in the cloud, meaning you
+          can access your snippets immediately on all your devices. Our Mac and
+          iOS apps will help you organize everything.
+        </p>
+      </div>
+      <div class="clipboard__quick">
+        <img
+          class="clipboard__image"
+          src="./assets/images/image-computer.png"
+          alt="computer"
+        />
+        <div class="clipboard__info3">
+          <div class="clipboard__info clipboard__info4">
+            <h2 class="clipboard__subtitle clipboard__subtitle2">
+              Quick Search
+            </h2>
+            <p class="clipboard__text clipboard__text--margin">
+              Easily search your snippets by content, category, web address,
+              application, and more.
+            </p>
+          </div>
+          <div class="clipboard__info clipboard__info4">
+            <h2 class="clipboard__subtitle clipboard__subtitle2">
+              iCloud Sync
+            </h2>
+            <p class="clipboard__text clipboard__text--margin">
+              Instantly saves and syncs snippets across all your devices.
+            </p>
+          </div>
+          <div class="clipboard__info clipboard__info4">
+            <h2 class="clipboard__subtitle clipboard__subtitle2">
+              Complete History
+            </h2>
+            <p class="clipboard__text clipboard__text--margin">
+              Retrieve any snippets from the first moment you started using the
+              app.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="clipboard__info">
+        <h2 class="clipboard__subtitle">Access Clipboard Anywhere</h2>
+        <p class="clipboard__text">
+          Whether you’re on the go, or at your computer, you can access all your
+          Clipboard snippets in a few simple clicks.
+        </p>
+      </div>
+      <img
+        class="clipboard__image clipboard__image--margin"
+        src="./assets/images/image-devices.png"
+        alt="devices"
+      />
+      <div class="clipboard__info">
+        <h2 class="clipboard__subtitle">Supercharge your workflow</h2>
+        <p class="clipboard__text">
+          We’ve got the tools to boost your productivity.
+        </p>
+      </div>
+      <div class="clipboard__items-row">
+        <div class="clipboard__items">
+          <img
+            class="clipboard__icon"
+            src="./assets/images/icon-blacklist.svg"
+            alt="text"
+          />
+          <h2 class="clipboard__subtitle clipboard__subtitle2">
+            Create blacklists
+          </h2>
+          <p class="clipboard__text clipboard__text--margin">
+            Ensure sensitive information never makes its way to your clipboard
+            by excluding certain sources.
+          </p>
+        </div>
+        <div class="clipboard__items">
+          <img
+            class="clipboard__icon"
+            src="./assets/images/icon-text.svg"
+            alt="text"
+          />
+          <h2 class="clipboard__subtitle clipboard__subtitle2">
+            Plain text snippets
+          </h2>
+          <p class="clipboard__text clipboard__text--margin">
+            Remove unwanted formatting from copied text for a consistent look.
+          </p>
+        </div>
+
+        <div class="clipboard__items">
+          <img
+            class="clipboard__icon"
+            src="./assets/images/icon-preview.svg"
+            alt="preview"
+          />
+          <h2 class="clipboard__subtitle clipboard__subtitle2">
+            Sneak preview
+          </h2>
+          <p class="clipboard__text clipboard__text--margin">
+            Quick preview of all snippets on your Clipboard for easy access.
+          </p>
+        </div>
+      </div>
+      <div class="clipboard__logos">
+        <img
+          class="clipboard__logo"
+          src="./assets/images/logo-google.png"
+          alt="google"
+        />
+        <img
+          class="clipboard__logo"
+          src="./assets/images/logo-ibm.png"
+          alt="ibm"
+        />
+        <img
+          class="clipboard__logo"
+          src="./assets/images/logo-microsoft.png"
+          alt="microsoft"
+        />
+        <img
+          class="clipboard__logo"
+          src="./assets/images/logo-hp.png"
+          alt="hp"
+        />
+        <img
+          class="clipboard__logo"
+          src="./assets/images/logo-vector-graphics.png"
+          alt="vector-graphics"
+        />
+      </div>
+      <div class="clipboard__info">
+        <h2 class="clipboard__subtitle">Clipboard for iOS and Mac OS</h2>
+        <p class="clipboard__text">
+          Available for free on the App Store. Download for Mac or iOS, sync
+          with iCloud and you’re ready to start adding to your clipboard.
+        </p>
+      </div>
+      <div class="button__main">
+        <a class="button button--green" href="#">Download for iOS</a>
+        <a class="button button--blue" href="#">Download for Mac</a>
+      </div>
+    </main>
+    <footer class="footer">
+      <img
+        class="clipboard__principal clipboard__principal--footer"
+        src="./assets/images/logo.svg"
+        alt="logo"
+      />
+      <div class="clipboard__footer">
+        <span class="clipboard__policy">FAQs</span>
+        <span class="clipboard__policy">Contact Us</span>
+        <span class="clipboard__policy">Privacy Policy</span>
+        <span class="clipboard__policy">Press Kit</span>
+        <span class="clipboard__policy">Install Guide</span>
+      </div>
+      <div class="clipboard__footer-logos">
+        <img
+          class="clipboard__redes"
+          src="./assets/images/icon-facebook.svg"
+          alt="facebook"
+        />
+        <img
+          class="clipboard__redes"
+          src="./assets/images/icon-twitter.svg"
+          alt="twitter"
+        />
+        <img
+          class="clipboard__redes"
+          src="./assets/images/icon-instagram.svg"
+          alt="instagram"
+        />
+      </div>
+    </footer>
   </body>
 </html>
