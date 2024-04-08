@@ -27,9 +27,10 @@ ul {
 }
 body {
   margin: 0;
-  font-family: "Bai Jamjuree", sans-serif;
+  font-family: 'Bai Jamjuree', sans-serif;
   background-image: url(../assets/images/bg-header-mobile.png);
   background-repeat: no-repeat;
+  background-size: contain;
   text-align: center;
   color: var(--primary-color-text);
 }
@@ -237,6 +238,7 @@ body {
 .button__main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 170px;
 }
 @media screen and (width>=1440px) {
@@ -279,7 +281,9 @@ body {
     padding: 0 165px;
   }
   .clipboard__footer {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: start;
     margin-bottom: 0;
   }
   .clipboard__footer-logos {
